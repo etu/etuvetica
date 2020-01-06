@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4 {
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "etuvetica";
+  src: url("fonts/etuvetica.woff") format('woff');
+}
+
+/** Set my font for this document */
+body {
+    font-family: "etuvetica", monospace;
+    font-size: 36px;
+}
+
+/** Header that fill the entire screen */
+header {
+    font-size: 3rem;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+/** Dividers */
+.divider {
+    width: 2px;
+    height: 100px;
+    margin: auto;
+    background: black;
+    display: block;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+/** That overlap the element above */
+.divider.up {
+    margin-top: -60px;
+}
+
+/** Regular boxes for text */
+p.demo {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+}
+
+p.demo > textarea {
+    width: 100%;
+    height: 30rem;
+    font-family: 'etuvetica', monospace;
+    font-size: 2rem;
+}
+
+/** Mobile support */
+@media (max-width: 900px) {
+    p.demo {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 560px) {
+    p.demo {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
